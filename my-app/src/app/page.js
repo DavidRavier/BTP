@@ -17,8 +17,8 @@ export default function Home() {
           >
             By{" "}
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
+              src="/MPLoc_transparent.png"
+              alt="MPLoc Logo"
               className="dark:invert"
               width={100}
               height={24}
@@ -31,12 +31,121 @@ export default function Home() {
       <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
         <Image
           className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
+          src="/Homepage_main.png"
+          alt="Main image"
           width={180}
           height={37}
           priority
         />
+      </div>
+
+      <div>
+        <h2>Vos avantages chez MP Loc</h2>
+        <Image
+              src="/HomepageIcon1.png"
+              alt="MPLoc Logo"
+              className="dark:invert"
+              width={50}
+              height={12}
+              priority
+            />
+            <Image
+              src="/HomepageIcon2.png"
+              alt="MPLoc Logo"
+              className="dark:invert"
+              width={50}
+              height={12}
+              priority
+            />
+            <Image
+              src="/HomepageIcon3.png"
+              alt="MPLoc Logo"
+              className="dark:invert"
+              width={50}
+              height={12}
+              priority
+            />
+            <Image
+              src="/HomepageIcon4.png"
+              alt="MPLoc Logo"
+              className="dark:invert"
+              width={50}
+              height={12}
+              priority
+            />
+            <Image
+              src="/HomepageIcon5.png"
+              alt="MPLoc Logo"
+              className="dark:invert"
+              width={50}
+              height={12}
+              priority
+            />
+            <Image
+              src="/HomepageIcon6.png"
+              alt="MPLoc Logo"
+              className="dark:invert"
+              width={50}
+              height={12}
+              priority
+            />
+
+      </div>
+
+      <div>
+        <h2>Nos conseils</h2>
+        <Image
+              src="/Homepage_advice1.png"
+              alt=""
+              className="dark:invert"
+              width={350}
+              height={12}
+              priority
+            />
+            <h4>Un petit coup de pelle?</h4>
+            <p>    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia aperiam nulla facere! Harum dolores enim iusto doloribus aliquam fugiat voluptatem ex blanditiis asperiores, quas molestiae sit voluptas illum saepe! Laboriosam unde quas beatae dolorum est provident modi amet nam quam. Amet officiis, nam minus at vero rem officia ullam culpa delectus voluptates, blanditiis quasi vel libero modi optio omnis sapiente.
+</p>
+<p>EN SAVOIR PLUS</p>
+
+        <Image
+              src="/Homepage_advice2.png"
+              alt=""
+              className="dark:invert"
+              width={500}
+              height={12}
+              priority
+            />
+      </div>
+
+      <div>
+        <h2>Vos agences MP Loc</h2>
+        <Image
+              src="/Homepage_agency1.png"
+              alt=""
+              className="dark:invert"
+              width={500}
+              height={12}
+              priority
+            />
+            <h3>Titre de référencement</h3>
+        <h3>Muret</h3><p>Lorem ipsum dolor sit amet consectetur</p>
+        <h3>Cazères</h3><p>Lorem ipsum dolor sit amet consectetur</p>
+        <h3>Autérive</h3><p>Lorem ipsum dolor sit amet consectetur</p>
+        <Image
+              src="/Homepage_agency2.png"
+              alt=""
+              className="dark:invert"
+              width={350}
+              height={12}
+              priority
+            />
+      </div>
+
+      <div>
+
+      
+        <p>Votre agence est ouverte du lundi au vendredi de 7h à 12h et de 13h45 à 18h.</p>
+        <p> Nous vous accueillons également dans nos autres agences.</p>
       </div>
 
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">

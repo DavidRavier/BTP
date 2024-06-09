@@ -1,5 +1,7 @@
 
-
+function TruckOverview() {
+    return (
+// eslint-disable-next-line react/jsx-no-undef
 <Image
               src="/dumptruck_orange.png"
               alt="dump truck overview"
@@ -8,3 +10,8 @@
               height={250}
               priority
             />
+    )
+};
+
+export default TruckOverview();
+

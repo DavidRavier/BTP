@@ -1,6 +1,35 @@
-/* eslint-disable react/jsx-no-undef */
+import Image from "next/image";
 
-function HomepageIcon() {
+
+
+const icon = [
+  {
+  id: 0,
+  imageId: "HomepageIcon1",
+  text:"LARGE CHOIX D'ENGINS"
+}, {
+  id: 1,
+  imageId: "HomepageIcon2",
+  text:"ASSISTANCE 7 JOURS/7"
+}, {
+  id: 2,
+  imageId: "HomepageIcon3",
+  text:"LIVRAISON A DOMICILE"
+}, {
+  id: 3,
+  imageId: "HomepageIcon4",
+  text:"PRIX ATTRACTIFS"
+}, {
+  id: 4,
+  imageId: "HomepageIcon5",
+  text:"EQUIPE REACTIVE"
+}, {
+  id: 5,
+  imageId: "HomepageIcon6",
+  text:"CONSEILS POUR VOS TRAVAUX"
+}]
+
+const HomepageIcon = () => {
     return (
         <Image
               src="/HomepageIcon1.png"

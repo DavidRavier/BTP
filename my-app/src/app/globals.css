@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "RestoraExtraLight";
-  src: url('/src/ui/RestoraExtraLight.otf');
+  font-family: "Restora";
+  src: url("/src/ui/RestoraExtraLight.otf");
 }
 
 :root {

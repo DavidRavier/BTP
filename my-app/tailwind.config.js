@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        custom: ["RestoraExtraLight"]
+        restora: ["Restora", "sans-serif"],
       }
     },
   },

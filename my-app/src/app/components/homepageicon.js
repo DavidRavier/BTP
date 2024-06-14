@@ -29,6 +29,15 @@ const icon = [
   text:"CONSEILS POUR VOS TRAVAUX"
 }]
 
+const homepageicon = ({icon}) => {
+  return (
+    <div>
+      <Image />
+      <p className="text-gray-600">{icon.text}</p>
+    </div>
+  )
+}
+
 const HomepageIcon = () => {
     return (
         <Image

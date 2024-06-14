@@ -1,9 +1,7 @@
 /*
 La configuration de Tailwind fait changer la couleur du header en fonction de la page 
-d'un thème "sombre" (fond bleu et écriture blanche) à un thème clair (fond blanc écriture bleue)
+d'un thème "sombre" (fond bleu et écriture blanche) à un thème clair (fond blanc écriture bleue), le tout grâce à une ternaire
 */ 
-
-/*
 
 import Image from "next/image";
 
@@ -18,10 +16,12 @@ const Header = () => {
         priority
         />     
         );
-        }; 
+
+        <li></li>
+}; 
         
-        export default Header();
+export default Header();
         
-        */
+       
 
 

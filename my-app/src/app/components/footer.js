@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Divider } from "@mui/material";
 
 export default function Footer() {
     return (

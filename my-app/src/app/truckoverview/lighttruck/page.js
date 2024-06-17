@@ -6,7 +6,7 @@ export default function Page() {
         <div>
             <div>
 
-                <h1>CAMION BENNE</h1>
+            <p className="text-gray-300 --tw-text-opacity: 0.3 text-9xl ">CAMION BENNE</p>
                     <Image 
                         src="/dumptruck_white.png"
                         alt="MPLoc Logo"

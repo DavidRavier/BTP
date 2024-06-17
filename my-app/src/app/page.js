@@ -18,7 +18,7 @@ export default function Home() {
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores tenetur temporibus accusantium obcaecati voluptatem nesciunt minima ad. Sed temporibus at a error sunt dicta ratione.</p>
       </div>
       <div className="flex">
-        <h2>Vos avantages chez MP Loc</h2>
+        <h2 className="text-center">Vos avantages chez MP Loc</h2>
         <Image
               src="/HomepageIcon1.png"
               alt="MPLoc Logo"

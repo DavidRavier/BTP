@@ -17,7 +17,7 @@ export default function MediaCard() {
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         sx={{ height: 140 }}
-        image="/static/images/cards/contemplative-reptile.jpg"
+        image="/Transport4.png"
         title="Camion benne simple cabine"
       />
       <CardContent>

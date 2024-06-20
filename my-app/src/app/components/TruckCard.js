@@ -11,27 +11,37 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import CardHeader from '@mui/material/CardHeader';
+import { blue } from '@mui/material/colors';
+
 
 export default function MediaCard() {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    // Pour pouvoir ajouter la mention "à partir de 250€ /jour, il faut rajouter le subheader qui separ placé en position absolute sur l'image"
+    <Card sx={{ maxWidth: 385 }}>
+        <CardHeader 
+            subheader="A partir de 250€ /jour"
+            sx={{ maxWidth: 1/2 }}
+        />
       <CardMedia
-        sx={{ height: 140 }}
+        sx={{ height: 220 }}
         image="/Transport4.png"
         title="Camion benne simple cabine"
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography variant="h4" component="div">
           Camion benne simple cabine
         </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+        <Typography gutterBottom component="div">
+          CHARGE UTILE 1,1 T
         </Typography>
+        <Typography variant="body2" color="text.secondary">Benne basculante: Oui</Typography>
+        <Typography variant="body2" color="text.secondary">Nombre de places: 3</Typography>
+        <Typography variant="body2" color="text.secondary">PTAC (kg): 3500</Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Réserver</Button>
-        <Button size="small">EN SAVOIR PLUS</Button>
+        <Button size="large" variant='contained' fullWidth="true">Réserver</Button>
+        <Button size="large" variant='text' fullWidth="true">En savoir plus</Button>
       </CardActions>
     </Card>
   );

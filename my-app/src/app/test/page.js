@@ -1,45 +1,27 @@
+import Image from "next/image";
 
-/*
-Faire une carte avec l'image, une étiquette collée en haut avec le prix puis sur la moitié inférieure
-les caractéristiques du camion avec les deux faux boutons réserver et en savoir plus
-*/
 
-import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import CardHeader from '@mui/material/CardHeader';
-import { blue } from '@mui/material/colors';
-import Divider from '@mui/material/Divider';
-
-export default function MediaCard() {
-  return (
-    // Pour pouvoir ajouter la mention "à partir de 250€ /jour, il faut rajouter le subheader qui separ placé en position absolute sur l'image"
-    <Card sx={{ maxWidth: 385 }}>
-    
-      <CardMedia
-        sx={{ height: 220 }}
-        image="/Transport4.png"
-        title="Camion benne simple cabine"
-      />
-      <CardContent>
-        <Typography variant="h4" component="div">
-          Camion benne simple cabine
-        </Typography>
-        <Typography gutterBottom component="div">
-          CHARGE UTILE 1,1 T
-        </Typography>
-        <Typography variant="body2" color="text.secondary">Benne basculante: Oui</Typography>
-        <Typography variant="body2" color="text.secondary">Nombre de places: 3</Typography>
-        <Typography variant="body2" color="text.secondary">PTAC (kg): 3500</Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="large" variant='contained'>Réserver</Button>
-        <Button size="large" variant='text'>En savoir plus</Button>
-      </CardActions>
-    </Card>
-  );
+export default function Contact() {
+    return (
+    <div>
+    <Image 
+        className=""
+        src="/Homepage_contact2.png"
+        alt="Engin de chantier vu du ciel"
+        width={1000}
+        height={250}
+    />
+    <Image 
+        className=""
+        src="/Homepage_contact1.png"
+        alt="Escalier en béton"
+        width={500}
+        height={125}
+    />
+    <p>Une question?</p>
+    <p>Contactez-nous</p>
+    <button className="bg-gray-400 px-3">CONTACTEZ-NOUS</button>
+    <button className="bg-blue-400 px-3">05 34 51 57 91</button>
+    </div>
+    )
 }

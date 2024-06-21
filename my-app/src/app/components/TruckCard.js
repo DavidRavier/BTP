@@ -12,7 +12,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import CardHeader from '@mui/material/CardHeader';
-import { blue } from '@mui/material/colors';
+import BlueButton from './BlueButton';
 
 
 export default function MediaCard() {

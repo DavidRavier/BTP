@@ -23,12 +23,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-secondary-rgb))
-    )
-    rgb(var(--background-primary-rgb));
+  
 }
 
 @layer utilities {

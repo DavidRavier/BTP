@@ -21,7 +21,7 @@ export default function Footer() {
                     <ul>Lorem</ul>
                     <ul>Agence de Carères:</ul>
                     <ul>Lorem</ul>
-                    <ul>Agence d'Autérive</ul>
+                    <ul>Agence Autérive</ul>
                     <ul>Lorem</ul>
                     <ul>Tél: 05 34 51 57 91</ul>
                     <ul>Mail: loremipsum@lorem.com</ul>

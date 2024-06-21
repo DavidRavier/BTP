@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Header from "@/app/components/Header";
+import { FormControl, FormLabel, InputAdornment, RadioGroup, TextField, FormControlLabel, Radio } from "@mui/material";
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
 export default function Page() {
     return (
@@ -28,11 +30,48 @@ export default function Page() {
             </div>
 
             <div>
-                <li>
-                    <ol>Caractéristiques techniques</ol>
-                    <ol>Documentation</ol>
-                    <ol>Réserver votre engin</ol>
-                </li>
+                    <section>
+                    Caractéristiques techniques
+                    <p>Hauteur: 2,22m</p>
+                    <p>Longueur: 6,03m</p>
+                    <p>Largeur: 2,12m</p>
+                    <p>Largeur de la benne: 2m</p>
+                    <p>Longueur de la benne: 3,60m</p>
+                    <p>Poids: 2 890 kg</p>
+                    <p> Benne basculante: Oui</p>
+                    <p>Nombre de places: 3</p>
+                    <p>PTAC: 3 500 kg</p>
+                    <p>Moteur: électrique</p>
+                    <p>Permis utilisé: Permis B</p>
+                    <p>Coffre à outils: Non</p>
+                    </section>
+                    <section>
+                    Documentation
+                    <p>Lorem</p>
+                    <button>TELECHARGER LE PDF</button>
+                    </section>
+                    <section>
+                    Réserver votre engin
+                    <FormControl>
+                    <TextField id="standard-firstname" label="Nom" variant="standard" />
+                    <TextField id="standard-lastname" label="Prénom" variant="standard" />
+                    <TextField id="standard-phonenumber" label="Téléphone" variant="standard" />
+                    <TextField id="standard-email" label="Email" variant="standard" />
+                        <InputAdornment position="start">
+                        <CalendarMonthIcon />
+                        <TextField id="standard-begindate" label="Date d'emprunt" variant="standard" />
+                        </InputAdornment>
+                        <InputAdornment position="start">
+                        <CalendarMonthIcon  />
+                        <TextField id="standard-enddate" label="Date de fin" variant="standard" />
+                        </InputAdornment>
+                        <FormLabel id="row-radio-button-group-label">Livraison</FormLabel>
+                        <RadioGroup row name="row-radio-buttons-group" aria-labelledby="row-radio-button-group-label">
+                            <FormControlLabel value="oui" control={<Radio />} label="oui" />
+                            <FormControlLabel value="non" control={<Radio />} label="non" />
+                        </RadioGroup>
+                    </FormControl>
+                    </section>
             </div>    
         </div>
     )

@@ -3,9 +3,10 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import WhiteButton from "./components/WhiteButton";
 import BlueButton from "./components/BlueButton";
-import { Button } from "@mui/material";
+import { Button, Divider } from "@mui/material";
 import WestIcon from '@mui/icons-material/West';
 import EastIcon from '@mui/icons-material/East';
+
 
 export default function Home() {
   return (
@@ -133,62 +134,64 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
         <h2 className="text-dark font-restora text-left mb-12 mt-16 text-4xl">Nos conseils</h2>
-        <div>
+      <section className="flex">
+        <span className="flex-col">
         <button className="bg-secondary px-4 mr-6 mb-8">05 34 51 57 91</button>
           <button className="bg-primary px-4 mb-8">Réserver</button>
           <Image 
             src="/Homepage_advice1.png"
               alt=""
-              className="mb-4"
+              className="flex mb-4"
               width={350}
               height={12}
           />
           <h4 className="text-dark font-restora text-xl mb-4">Un petit coup de pelle?</h4>
             <p className="text-dark font-restora text-sm max-w-sm mb-4">    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia aperiam nulla facere! Harum dolores enim iusto doloribus aliquam fugiat voluptatem ex blanditiis asperiores, quas molestiae sit voluptas illum saepe! Laboriosam unde quas beatae dolorum est provident modi amet nam quam. Amet officiis, nam minus at vero rem officia ullam culpa delectus voluptates, blanditiis quasi vel libero modi optio omnis sapiente.</p>
-            <Button variant="text" disableElevation className="text-dark font-restora text-sm text-left">EN SAVOIR PLUS</Button>
-        </div>
-      </section>
-      <div>
-        <h2>Nos conseils</h2>
-        
-            
-
-        <Image
+        </span>
+            <Image
               src="/Homepage_advice2.png"
-              alt=""
+              alt="travailleurs souriant"
               className=""
-              width={500}
+              width={400}
               height={12}
-              priority
             />
-      </div>
+      </section>
+            <Button variant="text" disableElevation className="text-dark font-restora text-sm">EN SAVOIR PLUS</Button>
 
-      <div>
-        <h2>Vos agences MP Loc</h2>
+        <h2 className="text-dark font-restora text-left mb-8 mt-16 text-4xl">Vos agences MP Loc</h2>
+<section className="flex">
+<span className="flex-col">
         <Image
               src="/Homepage_agency1.png"
               alt=""
-              className=""
-              width={500}
+              className="mb-8"
+              width={450}
               height={12}
-              priority
             />
-            <h4>Titre de référencement</h4>
-        <h3>Muret</h3><p>Lorem ipsum dolor sit amet consectetur</p>
-        <h3>Cazères</h3><p>Lorem ipsum dolor sit amet consectetur</p>
-        <h3>Autérive</h3><p>Lorem ipsum dolor sit amet consectetur</p>
+            <p className="text-dark font-restora text-xl max-w-sm mb-4 text-right">Titre de référencement</p>
+            <p className="text-dark font-restora text-sm max-w-sm mb-4 text-right">    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia aperiam nulla facere! Harum dolores enim iusto doloribus aliquam fugiat voluptatem ex blanditiis asperiores, quas molestiae sit voluptas illum saepe! Laboriosam unde quas beatae dolorum est provident modi amet nam quam. Amet officiis, nam minus at vero rem officia ullam culpa delectus voluptates, blanditiis quasi vel libero modi optio omnis sapiente.</p>
+            <p className="text-dark">EN SAVOIR PLUS</p>
+            <button className="bg-secondary px-4 mr-4">05 34 51 57 91</button>
+            <button className="bg-primary px-4 mb-8">Réserver</button>
+</span>
+<span className="flex-col">
+        <h3 className="text-dark font-restora text-4xl">MURET</h3>
+        <p className="text-dark text-sm">Lorem ipsum dolor sit amet consectetur</p>
+        <h3 className="text-dark font-restora text-4xl">CAZÈRES</h3>
+        <p className="text-dark text-sm">Lorem ipsum dolor sit amet consectetur</p>
+        <h3 className="text-dark font-restora text-4xl">AUTERIVE</h3>
+        <p className="text-dark text-sm">Lorem ipsum dolor sit amet consectetur</p>
         <Image
               src="/Homepage_agency2.png"
               alt=""
               className=""
-              width={350}
+              width={300}
               height={12}
               priority
             />
-      </div>
-
+</span>
+</section>
       <div>
 
       
@@ -196,55 +199,54 @@ export default function Home() {
         <p> Nous vous accueillons également dans nos autres agences.</p>
       </div>
 
-      <div className="grid text-white-100 lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
+      <div className="grid text-light bg-primary lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
       <Image
         src="/MPLoc_transparent.png"
         alt="Logo MPLoc"
+        className="mr-8 ml-4 my-8"
         width={200}
         height={12}
         />
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Informations{" "}
-            <li>
-              <ul>Accueil</ul>
-              <ul>Nos agences</ul>
-              <li>Locations matériaux
-                <ul>Gros matériel</ul>
-                <ul>Petit matériel</ul>
-                <ul>Matériel spécifique</ul>
-                <ul>Matériel benne</ul>
-              </li>
-              <ul>Contact</ul>
-            </li>
+          <h2 className={`my-8 text-xs py-2`}>
+            Informations
+            <Divider variant="middle" component="p" className="bg-light my-2"/>
+              <p>Accueil</p>
+              <p>Nos agences</p>
+              <p>Locations matériaux</p>
+                <p>Gros matériel</p>
+                <p>Petit matériel</p>
+                <p>Matériel spécifique</p>
+                <p>Matériel benne</p>
+              <p>Contact</p>
           </h2>
 
-          <h2 className={`mb-3 text-2xl font-semibold`}>
+          <h2 className={`my-8 text-xs py-2`}>
             Contact{" "}
-            <li>
-              <ul>Agence de Muret:</ul>
-              <ul>Lorem</ul>
-              <ul>Agence de Carères:</ul>
-              <ul>Lorem</ul>
-              <ul>Agence Autérive</ul>
-              <ul>Lorem</ul>
-              <ul>Tél: 05 34 51 57 91</ul>
-              <ul>Mail: loremipsum@lorem.com</ul>
-            </li>
+            <Divider variant="middle" component="p" className="bg-light my-2"/>
+              <p>Agence de Muret:</p>
+              <p>Lorem</p>
+              <p>Agence de Carères:</p>
+              <p>Lorem</p>
+              <p>Agence Autérive</p>
+              <p>Lorem</p>
+              <p>Tél: 05 34 51 57 91</p>
+              <p>Mail: loremipsum@lorem.com</p>
           </h2>
 
-          <h2 className={`mb-3 text-2xl font-semibold`}>
+          <h2 className={`my-8 text-xs py-2`}>
             Informations{" "}
+            <Divider variant="middle" component="p" className="bg-light mt-2"/>
             <Image
               src="/Logo_editions_corses.png"
               alt="logo editions corses"
-              className=""
+              className="my-4"
               width={150}
               height={12}
               priority
             />
-            © 2024 - Les éditions corses
-            Pexels
-            Mentions légales
+            <p>© 2024 - Les éditions corses</p>
+            <p>Pexels</p>
+            <p>Mentions légales</p>
           </h2>
       </div>
     </main>

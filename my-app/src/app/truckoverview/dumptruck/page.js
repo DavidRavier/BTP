@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { Divider } from "@mui/material";
+import Footer from "@/app/components/Footer";
 
 export default function Page() {
     return (
@@ -27,6 +29,7 @@ export default function Page() {
             <tr>Engins dans la même gamme</tr>
         </thead>
     </table>
+        <Footer />
         </div>
     )
     

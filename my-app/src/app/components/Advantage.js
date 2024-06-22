@@ -5,10 +5,80 @@
 
 import Image from "next/image";
 
+export default function Advantage() {
+    return(
+        <>
+        <h2 className="text-dark font-restora text-center mb-12 mt-16 text-4xl">Vos avantages chez MP Loc</h2>
+        <section className="flex justify-evenly">
+    <div className="mb-36">
+      <Image  
+        src="/HomepageIcon1.png"
+        alt="icone BTP"
+        width={50}
+        height={50}
+        className="mb-4"
+      />
+      <p className="text-primary text-center text-xs max-w-24">LARGE CHOIX D`ENGINS</p>
+    </div>
+    <div className="mb-36">
+      <Image 
+        src="/HomepageIcon2.png"
+        alt="icone BTP"
+        width={50}
+        height={50}
+        className="mb-4"
+      />
+      <p className="text-primary text-center text-xs max-w-20">ASSISTANCE 7 JOURS/7</p>
+    </div>
+    <div className="mb-36">
+      <Image 
+        src="/HomepageIcon3.png"
+        alt="icone BTP"
+        width={50}
+        height={50}
+        className="mb-4"
+      />
+      <p className="text-primary text-center text-xs max-w-20">LIVRAISON A DOMICILE</p>
+    </div>
+    <div className="mb-36">
+      <Image 
+        src="/HomepageIcon4.png"
+        alt="icone BTP"
+        width={50}
+        height={50}
+        className="mb-4"
+      />
+      <p className="text-primary text-center text-xs max-w-24">PRIX ATTRACTIFS</p>
+    </div>
+    <div className="mb-36">
+      <Image 
+        src="/HomepageIcon5.png"
+        alt="icone BTP"
+        width={50}
+        height={50}
+        className="mb-4"
+      />
+      <p className="text-primary text-center text-xs max-w-24">EQUIPE REACTIVE</p>
+    </div>
+    <div className="mb-36">
+      <Image 
+        src="/HomepageIcon6.png"
+        alt="icone BTP"
+        width={50}
+        height={50}
+        className="mb-4"
+      />
+      <p className="text-primary text-center text-xs max-w-24">CONSEILS POUR VOS TRAVAUX</p>
+    </div>
+      </section>
+        </>
+    )
+}
 
 
 
 
+/*
 const location = [{
     id: 0,
     title: "TRANSPORT & MANUTENTION",
@@ -46,7 +116,6 @@ export default function Advantage() {
     )
 }
 
-/*
 Peut-être laisser le en savoir plus et le bouton à l'extérieur du .map 
 voire même faire un component pour les deux boutons avec chacun une couleur et les mettre en disabled 
 <p>EN SAVOIR PLUS</p>

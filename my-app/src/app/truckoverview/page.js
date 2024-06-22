@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Footer from "../components/Footer";
 
 export default function Page() {
     return (
@@ -44,7 +45,9 @@ export default function Page() {
                     height={12}
                 />
             </div>
+            <Footer  />
         </div>
+    
     )
 }
 

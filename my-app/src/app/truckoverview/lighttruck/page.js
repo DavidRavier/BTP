@@ -2,6 +2,7 @@ import Image from "next/image";
 import Header from "@/app/components/Header";
 import { FormControl, FormLabel, InputAdornment, RadioGroup, TextField, FormControlLabel, Radio } from "@mui/material";
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import Footer from "@/app/components/Footer";
 
 export default function Page() {
     return (
@@ -72,7 +73,8 @@ export default function Page() {
                         </RadioGroup>
                     </FormControl>
                     </section>
-            </div>    
+            </div>
+            <Footer />  
         </div>
     )
     

@@ -4,33 +4,25 @@ d'un thème "sombre" (fond bleu et écriture blanche) à un thème clair (fond b
 */ 
 
 import Image from "next/image";
+import { AddIcon, FacebookIcon, InstagramIcon, PhoneIcon, SearchIcon } from "@mui/icons-material";
 
-const Header = () => {
+
+export default function Header() {
     return (
-        <div className="flex bg-blue-600">
+        <div className="flex bg-primary">
 
-        <Image
-        src="/MPLoc_transparent.png"
-        alt="MPLoc Logo"
-        className="m-8"
-        width={140}
-        height={30}
-        priority
-        />  
-          <div className="">
-          <li>
-              <ul>Accueil</ul>
-              <ul>Location de matériel</ul>
-              <ul>Conseils</ul>
-              <ul>Galerie photos</ul>
-              <ul>Contact</ul>
-          </li>
-      </div>   
+            <Image
+            src="/MPLoc_transparent.png"
+            alt="MPLoc Logo"
+            className="m-8"
+            width={140}
+            height={30}
+            priority
+            />  
+        
         </div>
         );
 }; 
-        
-export default Header();
         
        
 
@@ -144,6 +136,17 @@ export default function MyApp() {
 }
         
        
+
+
+  <div className="">
+          <nav>
+              <ul>Accueil</ul>
+              <ul>Location de matériel</ul>
+              <ul>Conseils</ul>
+              <ul>Galerie photos</ul>
+              <ul>Contact</ul>
+          </nav>
+      </div>   
 
 
 */

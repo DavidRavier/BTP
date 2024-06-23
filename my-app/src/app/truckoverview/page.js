@@ -1,12 +1,17 @@
 import Image from "next/image";
 import Footer from "../components/Footer";
+import Header from "../components/Header";
+import { Divider } from "@mui/material";
+import WhiteButton from "../components/WhiteButton";
+import BlueButton from "../components/BlueButton";
+import DumptruckCard from "../components/DumptruckCard";
 
 export default function Page() {
     return (
         <div>
+        <Header />
             <h1 className="font-restora text-center-800">Transport & Manutention</h1>
-            <div className="flex justify-content space-evenly">
-
+            <div className="flex">
                 <Image 
                     src="/transport1.png"
                     alt="Matériel de déménagement"
@@ -45,6 +50,7 @@ export default function Page() {
                     height={12}
                 />
             </div>
+            <DumptruckCard />
             <Footer  />
         </div>
     

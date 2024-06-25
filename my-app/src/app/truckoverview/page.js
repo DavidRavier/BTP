@@ -1,9 +1,6 @@
 import Image from "next/image";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import { Divider } from "@mui/material";
-import WhiteButton from "../components/WhiteButton";
-import BlueButton from "../components/BlueButton";
 import DumptruckCard from "../components/DumptruckCard";
 
 export default function Page() {

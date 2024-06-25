@@ -2,9 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "Restora";
-  src: url("/src/ui/RestoraExtraLight.otf");
+@layer base {
+  @font-face {
+    font-family: "Restora";
+    font-weight: 700;
+    src: url("/fonts/RestoraExtraLight.otf") format(otf);
+  }
 }
 
 :root {

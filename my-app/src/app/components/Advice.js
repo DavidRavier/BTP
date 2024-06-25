@@ -23,7 +23,7 @@ export default function Advice() {
             <Image
               src="/Homepage_advice2.png"
               alt="travailleurs souriant"
-              className=""
+              className="flex-col"
               width={400}
               height={12}
             />

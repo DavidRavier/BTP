@@ -5,6 +5,7 @@ import Image from "next/image";
 import GreyButton from "./GreyButton";
 import WhiteButton from "./WhiteButton";
 import BlueButton from "./BlueButton";
+import { ImageList, ImageListItem } from "@mui/material";
 
 
 export default function Location() {
@@ -62,24 +63,40 @@ export default function Location() {
 }
 
 
-/*
-const location = [{
-    id: 0,
-    title: "TRANSPORT & MANUTENTION",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias non vero exercitationem, reprehenderit, eligendi temporibus doloribus atque porro, at nostrum sapiente culpa veniam molestias?"
-}, {
-    id: 1,
+
+        /*
+
+const locationData = [{
+  img:"/Homepage_location1.png",
+  alt:"image BTP",
+  title: "TRANSPORT & MANUTENTION",
+  text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias non vero exercitationem, reprehenderit, eligendi temporibus doloribus atque porro, at nostrum sapiente culpa veniam molestias?"
+  }, {
+    img:"/Homepage_location2.png",
+    alt:"image BTP",
     title:"TERRASSEMENT & ROUTES",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias non vero exercitationem, reprehenderit, eligendi temporibus doloribus atque porro, at nostrum sapiente culpa veniam molestias?"
-}, {
-    id: 2,
-    title:"ELEVATION & TRAVAIL EN HAUTEUR",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias non vero exercitationem, reprehenderit, eligendi temporibus doloribus atque porro, at nostrum sapiente culpa veniam molestias?"
-}, {
-    id: 3,
-    title:"DEMOLITION & GROS OEUVRE",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias non vero exercitationem, reprehenderit, eligendi temporibus doloribus atque porro, at nostrum sapiente culpa veniam molestias?"
-}];
+    }, {
+      img:"/Homepage_location3.png",
+      alt:"image BTP",
+      title:"ELEVATION & TRAVAIL EN HAUTEUR",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias non vero exercitationem, reprehenderit, eligendi temporibus doloribus atque porro, at nostrum sapiente culpa veniam molestias?"
+      }, {
+        img:"/Homepage_location4.png",
+        alt:"image BTP",
+        title:"DEMOLITION & GROS OEUVRE",
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias non vero exercitationem, reprehenderit, eligendi temporibus doloribus atque porro, at nostrum sapiente culpa veniam molestias?"
+        }];
+        
+        <ImageList sx={{ width: 200, height: 50}} cols={4}>
+        {locationData.map((location) => (
+          <ImageListItem key={location.img}>
+            <Image src={location.img} alt={location.alt} title={location.title} text={location.text} />
+          </ImageListItem>
+        ))}
+      </ImageList>
+
+
 
 export default function List() {   
     const locationItems = location.map(item => <li>{item}</li>);

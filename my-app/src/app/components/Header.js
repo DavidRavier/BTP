@@ -5,15 +5,25 @@ grâce à une ternaire isLight?
 */ 
 
 import Image from "next/image";
-import { AddIcon, FacebookIcon, InstagramIcon, PhoneIcon, SearchIcon } from "@mui/icons-material";
+import { Add, Facebook, Instagram, Phone, Search } from "@mui/icons-material";
 import Link from "next/link";
+import { Menu, MenuItem, Button, ListItemIcon } from "@mui/material";
 
-
+function BasicMenu() {
+    const [anchorEl, setAnchorEl] = React.useState(null);
+    const open = Boolean(anchorEl);
+    const handleClick = (event) => {
+        setAnchorEl(event.currentTarget);
+        };
+        const handleClose = () => {
+            setAnchorEl(null)};
+}
 
 export default function Header() {
     return (
         <>
-        <div className=" bg-primary">
+        <div className=" flex justify-around items-baseline bg-primary">
+        <div>
             <Link href="/">
             <Image
             src="/MPLoc_transparent.png"
@@ -24,7 +34,42 @@ export default function Header() {
             priority
             />  
             </Link>
+        </div>
+        <div>
+
+            <Button>Accueil</Button>
+            <Link href={"#location"}>
+            <Button>Location de matériel</Button>
+            <Menu>
+                <MenuItem>Terrassement & routes</MenuItem>
+                <MenuItem>Transport & Manutention</MenuItem>
+                <MenuItem>Élévation & travail en hauteur</MenuItem>
+                <MenuItem>Démolition et gros œuvre</MenuItem>
+            </Menu>
+            </Link>
+            <Link href={"#advice"}>
+            <Button>Conseils</Button>
+            </Link>
+            <Button>Galerie photos</Button>
+            <Link href={"#contact"}>
+            <Button>
+            Contact
+            <ListItemIcon>
+                <Facebook fontSize="small"/>
+                <Instagram fontSize="small"/>
+            </ListItemIcon>
+            </Button>
+            </Link>
+        </div>
+        <div>
+            <ListItemIcon>
+                <Phone fontSize="small" />
+            </ListItemIcon>
         <button className="text-primary bg-light px-4 ">RÉSERVER</button>
+        <ListItemIcon>
+                <Search fontSize="small" />
+            </ListItemIcon>
+        </div>
         </div>
         </>
         );

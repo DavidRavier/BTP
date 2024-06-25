@@ -1,26 +1,27 @@
+'use client'
+
 import Image from "next/image";
 import Header from "@/app/components/Header";
 import { FormControl, FormLabel, InputAdornment, RadioGroup, TextField, FormControlLabel, Radio, Grid } from "@mui/material";
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import Footer from "@/app/components/Footer";
-import styled from "@emotion/styled";
 
-const Item = styled(Paper)
+
 export default function Page() {
     return (
         <div>
             <div>
-
+        <Header />
             <p className="text-secondary text-9xl ">CAMION BENNE</p>
                     <Image 
                         src="/dumptruck_white.png"
                         alt="MPLoc Logo"
-                        className=""
+                        className="grid"
                         width={750}
                         height={320}
                         priority
                     />
-                    <span className="text-dark">
+                    <span className="grid text-dark">
 
                         <p>A partir de 250€/jour</p>
                         <h2>
@@ -32,9 +33,6 @@ export default function Page() {
                     </span>
             </div>
         <Grid container spacing={3}>
-            <Item>Caractéristiques techniques</Item>
-            <Item>Documentation</Item>
-            <Item>Réserver votre engin</Item>
         </Grid>
             <div>
                     <section>

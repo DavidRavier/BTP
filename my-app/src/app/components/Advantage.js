@@ -10,12 +10,12 @@ export default function Advantage() {
     return(
         <>
         <h2 className="text-dark font-restora text-center mb-12 mt-16 text-4xl">Vos avantages chez MP Loc</h2>
-        <div className="flex justify-evenly text-primary">
-      <ImageList sx={{width: 200, height: 200 }} cols={6}>
+        <div className="flex text-primary">
+      <ImageList sx={{width: 1000, height: 200 }} cols={6}>
         {iconData.map((icon) => (
           <ImageListItem key={icon.img}>
-            <Image src={icon.img} alt={icon.alt} width={50} height={50} />
-            text={icon.text}
+            <Image src={icon.img} alt={icon.alt} width={60} height={60} className="mb-4 flex justify-center items-center"/>
+            <p className="text-center text-xs max-w-24">{icon.text}</p>
           </ImageListItem>
          ))}
       </ImageList>

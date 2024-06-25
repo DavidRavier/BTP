@@ -5,7 +5,7 @@ import DumptruckCard from "../components/DumptruckCard";
 
 export default function Page() {
     return (
-        <div>
+        <div className="">
         <Header />
             <h1 className="font-restora text-center-800">Transport & Manutention</h1>
             <div className="flex">

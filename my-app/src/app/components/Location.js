@@ -6,12 +6,75 @@ import GreyButton from "./GreyButton";
 import WhiteButton from "./WhiteButton";
 import BlueButton from "./BlueButton";
 import { ImageList, ImageListItem } from "@mui/material";
+import Link from "next/link";
 
 
 export default function Location() {
     return(
         <>
+        <ImageList sx={{width:1000, height: 500}} cols={4}>
+        {locationData.map((location) => (
+          <ImageListItem key={location.img}>
+          <h3 className="text-dark font-restora text-center mb-4 mt-8">{location.title}</h3>
+            <Image src={location.img} alt={location.alt} width={300} height={1000}/>
+            <p className="text-dark fonr font-restora text-sm max-w-52">{location.text}</p>
+            <WhiteButton />
+          <BlueButton />
+          </ImageListItem>
+        ))}
+      </ImageList>
+        </>
+    )
+}
+
+
+
+
+const locationData = [
+  {
+    img:"/Homepage_location1.png",
+    alt:"image BTP",
+    title: "TRANSPORT & MANUTENTION",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias non vero exercitationem, reprehenderit, eligendi temporibus doloribus atque porro, at nostrum sapiente culpa veniam molestias?"
+  }, 
+  {
+    img:"/Homepage_location2.png",
+    alt:"image BTP",
+    title:"TERRASSEMENT & ROUTES",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias non vero exercitationem, reprehenderit, eligendi temporibus doloribus atque porro, at nostrum sapiente culpa veniam molestias?"
+    }, 
+  {
+    img:"/Homepage_location3.png",
+    alt:"image BTP",
+    title:"ELEVATION & TRAVAIL EN HAUTEUR",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias non vero exercitationem, reprehenderit, eligendi temporibus doloribus atque porro, at nostrum sapiente culpa veniam molestias?"
+    }, 
+  {
+    img:"/Homepage_location4.png",
+    alt:"image BTP",
+    title:"DEMOLITION & GROS OEUVRE",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias non vero exercitationem, reprehenderit, eligendi temporibus doloribus atque porro, at nostrum sapiente culpa veniam molestias?"
+    }
+];
+        
+        /*
+        <ImageList sx={{ width: 1000, height: 2000}} cols={4}>
+        {locationData.map((location) => (
+          <ImageListItem key={location.img}>
+          <h3>{location.title}</h3>
+            <Image src={location.img} alt={location.alt}/>
+            <p>{location.text}</p>
+            <WhiteButton />
+          <BlueButton />
+          </ImageListItem>
+        ))}
+      </ImageList>
+
+-----
+
+<Link href="#location">
         <h2 className="text-dark font-restora text-center mb-12 mt-16 text-4xl ">Nos locations de matériel</h2>
+        </Link>
         <GreyButton />
       <section className="flex justify-evenly">
         <div>
@@ -58,45 +121,8 @@ export default function Location() {
           />
         </div>
       </section>
-        </>
-    )
-}
 
-
-
-        /*
-
-const locationData = [{
-  img:"/Homepage_location1.png",
-  alt:"image BTP",
-  title: "TRANSPORT & MANUTENTION",
-  text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias non vero exercitationem, reprehenderit, eligendi temporibus doloribus atque porro, at nostrum sapiente culpa veniam molestias?"
-  }, {
-    img:"/Homepage_location2.png",
-    alt:"image BTP",
-    title:"TERRASSEMENT & ROUTES",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias non vero exercitationem, reprehenderit, eligendi temporibus doloribus atque porro, at nostrum sapiente culpa veniam molestias?"
-    }, {
-      img:"/Homepage_location3.png",
-      alt:"image BTP",
-      title:"ELEVATION & TRAVAIL EN HAUTEUR",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias non vero exercitationem, reprehenderit, eligendi temporibus doloribus atque porro, at nostrum sapiente culpa veniam molestias?"
-      }, {
-        img:"/Homepage_location4.png",
-        alt:"image BTP",
-        title:"DEMOLITION & GROS OEUVRE",
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias non vero exercitationem, reprehenderit, eligendi temporibus doloribus atque porro, at nostrum sapiente culpa veniam molestias?"
-        }];
-        
-        <ImageList sx={{ width: 200, height: 50}} cols={4}>
-        {locationData.map((location) => (
-          <ImageListItem key={location.img}>
-            <Image src={location.img} alt={location.alt} title={location.title} text={location.text} />
-          </ImageListItem>
-        ))}
-      </ImageList>
-
-
+      ------
 
 export default function List() {   
     const locationItems = location.map(item => <li>{item}</li>);

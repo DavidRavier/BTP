@@ -6,7 +6,7 @@ export default function Carousel() {
     return (
         <>
 <section className="bg-primary">
-      <Link href="/truckoverview">
+      <Link href="/TruckOverview">
           <Image
             className=""
             src="/Homepage_main.png"

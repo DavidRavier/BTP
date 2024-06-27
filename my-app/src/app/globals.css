@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  h2{
+    @apply text-4xl
+  }
   @font-face {
     font-family: "Restora";
     font-weight: 700;

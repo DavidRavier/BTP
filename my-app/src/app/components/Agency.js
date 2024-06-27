@@ -6,7 +6,7 @@ export default function Agency() {
     return (
         <>
 <h2 className="text-dark font-restora text-left mb-8 mt-16 text-4xl">Vos agences MP Loc</h2>
-<section className="flex">
+<section className="flex justify-around">
 <span className="flex-col">
         <Image
               src="/Homepage_agency1.png"
@@ -15,8 +15,8 @@ export default function Agency() {
               width={450}
               height={12}
             />
-            <p className="text-dark font-restora text-xl max-w-sm mb-4 text-right">Titre de référencement</p>
-            <p className="text-dark font-restora text-sm max-w-sm mb-4 text-right">    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia aperiam nulla facere! Harum dolores enim iusto doloribus aliquam fugiat voluptatem ex blanditiis asperiores, quas molestiae sit voluptas illum saepe! Laboriosam unde quas beatae dolorum est provident modi amet nam quam. Amet officiis, nam minus at vero rem officia ullam culpa delectus voluptates, blanditiis quasi vel libero modi optio omnis sapiente.</p>
+            <p className="text-dark font-restora text-xl max-w-sm mb-4 text-right">TITRE DE RÉFÉRENCEMENT</p>
+            <p className="text-dark font-restora text-sm max-w-sm mb-4 text-justify">    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia aperiam nulla facere! Harum dolores enim iusto doloribus aliquam fugiat voluptatem ex blanditiis asperiores, quas molestiae sit voluptas illum saepe! Laboriosam unde quas beatae dolorum est provident modi amet nam quam. Amet officiis, nam minus at vero rem officia ullam culpa delectus voluptates, blanditiis quasi vel libero modi optio omnis sapiente.</p>
             <WhiteButton />
             <button className="bg-secondary px-4 mr-4">05 34 51 57 91</button>
             <BlueButton />

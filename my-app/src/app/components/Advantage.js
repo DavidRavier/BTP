@@ -9,13 +9,13 @@ import { ImageList, ImageListItem } from "@mui/material";
 export default function Advantage() {
     return(
         <>
-        <h2 className="text-dark font-restora text-center mb-12 mt-16 text-4xl">Vos avantages chez MP Loc</h2>
-        <div className="flex text-primary">
-      <ImageList sx={{width: 1000, height: 200 }} cols={6}>
+        <h2 className="text-dark font-restora mb-12 mt-16 mx-auto">Vos avantages chez MP Loc</h2>
+        <div className="flex justify-around items-end text-primary max-h-screen md:flex-nowrap md:overflow-x-auto">
+      <ImageList sx={{width: 1024, height: 150 }} cols={6}>
         {iconData.map((icon) => (
           <ImageListItem key={icon.img}>
-            <Image src={icon.img} alt={icon.alt} width={60} height={60} className="mb-4 flex justify-center items-center"/>
-            <p className="text-center text-xs max-w-24">{icon.text}</p>
+            <Image src={icon.img} alt={icon.alt} width={60} height={60} className=""/>
+            <p className="text-center text-xs max-w-24 mt-4">{icon.text}</p>
           </ImageListItem>
          ))}
       </ImageList>
@@ -89,81 +89,4 @@ export default function Advantage() {
         </>
     )
 }
-
-Peut-être laisser le en savoir plus et le bouton à l'extérieur du .map 
-voire même faire un component pour les deux boutons avec chacun une couleur et les mettre en disabled 
-<p>EN SAVOIR PLUS</p>
-<button>Réserver</button> //a mettre en touppercase
-----
-
-<section className="flex justify-evenly">
-    <div className="mb-36">
-      <Image  
-        img="/HomepageIcon1.png"
-        alt="icone BTP"
-        width={50}
-        height={50}
-        className="mb-4"
-      />
-      <p className="text-primary text-center text-xs max-w-24">LARGE CHOIX D`ENGINS</p>
-    </div>
-    <div className="mb-36">
-      <Image 
-        src="/HomepageIcon2.png"
-        alt="icone BTP"
-        width={50}
-        height={50}
-        className="mb-4"
-      />
-      <p className="text-primary text-center text-xs max-w-20">ASSISTANCE 7 JOURS/7</p>
-    </div>
-    <div className="mb-36">
-      <Image 
-        src="/HomepageIcon3.png"
-        alt="icone BTP"
-        width={50}
-        height={50}
-        className="mb-4"
-      />
-      <p className="text-primary text-center text-xs max-w-20">LIVRAISON A DOMICILE</p>
-    </div>
-    <div className="mb-36">
-      <Image 
-        src="/HomepageIcon4.png"
-        alt="icone BTP"
-        width={50}
-        height={50}
-        className="mb-4"
-      />
-      <p className="text-primary text-center text-xs max-w-24">PRIX ATTRACTIFS</p>
-    </div>
-    <div className="mb-36">
-      <Image 
-        src="/HomepageIcon5.png"
-        alt="icone BTP"
-        width={50}
-        height={50}
-        className="mb-4"
-      />
-      <p className="text-primary text-center text-xs max-w-24">EQUIPE REACTIVE</p>
-    </div>
-    <div className="mb-36">
-      <Image 
-        src="/HomepageIcon6.png"
-        alt="icone BTP"
-        width={50}
-        height={50}
-        className="mb-4"
-      />
-      <p className="text-primary text-center text-xs max-w-24">CONSEILS POUR VOS TRAVAUX</p>
-    </div>
-      </section>
-
-
-
-
-
-
-
-
-*/ 
+    */

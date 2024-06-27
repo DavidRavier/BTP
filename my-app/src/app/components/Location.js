@@ -12,17 +12,23 @@ import Link from "next/link";
 export default function Location() {
     return(
         <>
-        <ImageList sx={{width:1000, height: 500}} cols={4}>
+        <Link href="#location">
+        <h2 className="text-dark font-restora mx-auto mb-12 mt-16">Nos locations de matériel</h2>
+        </Link>
+        <GreyButton />
+        <div className="flex flex-col items-center justify-evenly">
+        <ImageList sx={{width:1000, height: 800}} cols={4}>
         {locationData.map((location) => (
           <ImageListItem key={location.img}>
-          <h3 className="text-dark font-restora text-center mb-4 mt-8">{location.title}</h3>
-            <Image src={location.img} alt={location.alt} width={300} height={1000}/>
-            <p className="text-dark fonr font-restora text-sm max-w-52">{location.text}</p>
+          <h3 className="text-dark font-restora text-xl text-center mb-4 mt-8 max-w-xs">{location.title}</h3>
+            <Image src={location.img} alt={location.alt} width={400} height={1000}/>
+            <p className="text-dark fonr font-restora text-sm max-w-52 text-clip">{location.text}</p>
             <WhiteButton />
           <BlueButton />
           </ImageListItem>
         ))}
       </ImageList>
+        </div>
         </>
     )
 }
@@ -46,13 +52,13 @@ const locationData = [
   {
     img:"/Homepage_location3.png",
     alt:"image BTP",
-    title:"ELEVATION & TRAVAIL EN HAUTEUR",
+    title:"ÉLÉVATION & TRAVAIL EN HAUTEUR",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias non vero exercitationem, reprehenderit, eligendi temporibus doloribus atque porro, at nostrum sapiente culpa veniam molestias?"
     }, 
   {
     img:"/Homepage_location4.png",
     alt:"image BTP",
-    title:"DEMOLITION & GROS OEUVRE",
+    title:"DÉMOLITION & GROS ŒUVRE",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias non vero exercitationem, reprehenderit, eligendi temporibus doloribus atque porro, at nostrum sapiente culpa veniam molestias?"
     }
 ];

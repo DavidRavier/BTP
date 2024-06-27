@@ -5,8 +5,8 @@ import WhiteButton from "./WhiteButton";
 export default function Advice() {
     return (
         <>
-<h2 className="text-dark font-restora text-left mb-12 mt-16 text-4xl">Nos conseils</h2>
-      <section className="flex">
+<h2 className="text-dark font-restora text-justify mb-4 mt-16">Nos conseils</h2>
+      <section className="flex justify-around">
         <span className="flex-col">
         <button className="bg-secondary px-4 mr-6 mb-8">05 34 51 57 91</button>
           <BlueButton />
@@ -28,6 +28,7 @@ export default function Advice() {
               height={12}
             />
       </section>
+      <button className="text-dark ">EN SAVOIR PLUS</button>
             <WhiteButton />
         </>
     )

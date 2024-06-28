@@ -1,38 +1,40 @@
 import Image from "next/image";
 import { Divider } from "@mui/material";
 import Footer from "@/app/components/Footer";
-import Header from "@/app/components/Header";
+import LightHeader from "@/app/components/LightHeader";
 import GreyButton from "@/app/components/GreyButton";
 import BlueButton from "@/app/components/BlueButton";
 
 export default function Page() {
     return (
         <>
-        <div>
-        <Header />
+        <section className="max-w-screen-lg">
+            <LightHeader />
+        <div className="">
             <Image 
                         src="/dumptruck_orange.png"
                         alt="Camion benne orange"
                         className=""
                         width={600}
-                        height={320}
+                        height={400}
                         priority
                     />
-    <h1 className="text-dark font-restora text-5xl" >Camion benne simple cabine</h1>
-    <p className="text-primary">CHARGE UTILE 1,1 T</p>
-    <p className="text-dark text-sm pb-6">Ref. 0000000</p>
-    <p className="text-dark text-sm pb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-    Saepe tempora delectus dolor eius dignissimos consequatur.
-    Sapiente sequi vitae perspiciatis obcaecati!
-    Id mollitia dolorum itaque impedit? Saepe veritatis id numquam magni obcaecati error
-    dolore placeat esse, nisi ex, a blanditiis adipisci tempore sint, maiores eum est
-    quidem explicabo eos labore nobis laborum architecto laudantium! Ipsam id mollitia
-    esse iure? Facere, tempora.</p>
-    <GreyButton />
-    <BlueButton />
-    <p className="text-dark">A partir de 250€ /jour</p>
+            <h1 className="text-dark font-restora text-5xl mb-4" >Camion benne simple cabine</h1>
+            <p className="text-primary mb-2">CHARGE UTILE 1,1 T</p>
+            <p className="text-dark text-sm pb-6">Ref. 0000000</p>
+            <p className="text-dark text-sm pb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Saepe tempora delectus dolor eius dignissimos consequatur.
+            Sapiente sequi vitae perspiciatis obcaecati!
+            Id mollitia dolorum itaque impedit? Saepe veritatis id numquam magni obcaecati error
+            dolore placeat esse, nisi ex, a blanditiis adipisci tempore sint, maiores eum est
+            quidem explicabo eos labore nobis laborum architecto laudantium! Ipsam id mollitia
+            esse iure? Facere, tempora.</p>
+            <GreyButton />
+            <BlueButton />
+            <p className="text-dark">A partir de 250€ /jour</p>
+        </div>
 
-    <table className="table-auto bg-primary text-light font-restora text-xs">
+    <table className="table-auto bg-primary text-light font-restora text-xs mb-12">
         <thead>
             <tr>
                 <th>Caractéristiques techniques</th>
@@ -72,8 +74,8 @@ export default function Page() {
             </tr>
         </tbody>
     </table>
+        </section>
         <Footer />
-        </div>
         </>
     )
     

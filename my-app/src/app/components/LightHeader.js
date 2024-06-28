@@ -1,24 +1,20 @@
-/*
-La configuration de Tailwind fait changer la couleur du header en fonction de la page 
-d'un thème "sombre" (fond bleu et écriture blanche) à un thème clair (fond blanc écriture bleue), le tout 
-grâce à une ternaire isLight? 
-*/ 
+
 
 "use client"
 import * as React from 'react';
 import Image from "next/image";
 import { Add, Facebook, Instagram, Phone, Search } from "@mui/icons-material";
 import Link from "next/link";
-import { MenuList, MenuItem, Button, ListItemIcon } from "@mui/material";
+import { Button, ListItemIcon, Divider } from "@mui/material";
 
 export default function Header() {
         return (
             <>
-                <div className=" flex justify-around items-center max-h-screen bg-primary">
+                <div className=" flex justify-around items-center max-h-screen bg-light">
                     <div>
                         <Link href="/">
                         <Image
-                        src="/MPLoc_transparent.png"
+                        src="/MPLoc.png"
                         alt="MPLoc Logo"
                         className="m-8"
                         width={140}
@@ -28,37 +24,38 @@ export default function Header() {
                         </Link>
                     </div>
                     <div>
-                        <Button className="text-light" size='small'>Accueil</Button>
+                        <Button className="text-primary" size='small'>Accueil</Button>
                         <Link href={"#location"}>
                             
-                            <Button className="text-light" size='small'>Location de matériel</Button>
+                            <Button className="text-primary" size='small'>Location de matériel</Button>
                                 <ListItemIcon>
-                                    <Add fontSize="small" color="light"/>
+                                    <Add fontSize="small" color='primary'/>
                                 </ListItemIcon>
                         </Link>
                         <Link href={"#advice"}>
-                            <Button className="text-light" size='small'>Conseils</Button>
+                            <Button className="text-primary" size='small'>Conseils</Button>
                         </Link>
-                        <Button className="text-light" size='small'>Galerie photos</Button>
+                        <Button className="text-primary" size='small'>Galerie photos</Button>
             <Link href={"#contact"}>
-            <Button className="text-light" size='small'>
+            <Button className="text-primary" size='small'>
             Contact
             <ListItemIcon>
-                <Facebook fontSize="small" color="light"/>
-                <Instagram fontSize="small" color="light"/>
+                <Facebook fontSize="small" color='primary'/>
+                <Instagram fontSize="small" color='primary'/>
             </ListItemIcon>
             </Button>
             </Link>
         </div>
         <div>
             <ListItemIcon>
-                <Phone fontSize="small"  color="light"/>
+                <Phone fontSize="small" color="primary"/>
             </ListItemIcon>
-        <button className="text-primary bg-light mx-2">RÉSERVER</button>
+        <button className="text-light bg-primary mx-2">RÉSERVER</button>
             <ListItemIcon>
-                <Search fontSize="small"  color="light"/>
+                <Search fontSize="small" color="primary"/>
             </ListItemIcon>
         </div>
+        <Divider className='bg-secondary' />
         </div>
         </>
         );

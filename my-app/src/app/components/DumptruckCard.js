@@ -7,7 +7,7 @@ import Link from "next/link"
 export default function DumptruckCard() {
     return (
         <>
-            <article className="grid grid-cols-3">
+            <article className="grid grid-cols-3 max-w-screen-lg">
                 <Image  
                     src="/dumptruck_orange.png"
                     alt="camion benne orange"
@@ -28,7 +28,7 @@ export default function DumptruckCard() {
                 <BlueButton />
                 </div>
                 <div>
-                <p className="bg-primary text-light px-4 py-2">A partir de 250€ /jour</p>
+                <p className="bg-primary text-light text-right px-4 py-2 mt-6">A partir de 250€ /jour</p>
                 </div>
                 <Divider variant="middle" className="mb-4"/>
             </article>

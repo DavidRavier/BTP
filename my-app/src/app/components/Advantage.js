@@ -10,7 +10,7 @@ export default function Advantage() {
     return(
         <>
         <h2 className="text-dark font-restora mb-12 mt-16 mx-auto">Vos avantages chez MP Loc</h2>
-        <div className="flex justify-around items-end text-primary max-h-screen md:flex-nowrap md:overflow-x-auto">
+        <div className="flex-auto text-primary max-h-screen md:flex-nowrap md:overflow-x-auto">
       <ImageList sx={{width: 1024, height: 150 }} cols={6}>
         {iconData.map((icon) => (
           <ImageListItem key={icon.img}>

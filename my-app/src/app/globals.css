@@ -6,6 +6,9 @@
   h2{
     @apply text-4xl
   }
+  .section {
+    @apply max-w-screen-lg
+  }
   @font-face {
     font-family: "Restora";
     font-weight: 700;

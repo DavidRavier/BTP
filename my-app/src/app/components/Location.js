@@ -13,15 +13,15 @@ export default function Location() {
     return(
         <>
         <Link href="#location">
-        <h2 className="text-dark font-restora mx-auto mb-12 mt-16">Nos locations de matériel</h2>
+        <h2 className="text-dark font-restora mb-12 mt-16 text-center">Nos locations de matériel</h2>
         </Link>
         <GreyButton />
-        <div className="flex flex-col items-center justify-evenly">
+        <div className="flex flex-col items-center justify-between">
         <ImageList sx={{width:1000, height: 800}} cols={4}>
         {locationData.map((location) => (
           <ImageListItem key={location.img}>
           <h3 className="text-dark font-restora text-xl text-center mb-4 mt-8 max-w-xs">{location.title}</h3>
-            <Image src={location.img} alt={location.alt} width={400} height={1000}/>
+            <Image src={location.img} alt={location.alt} width={300} height={1000}/>
             <p className="text-dark fonr font-restora text-sm max-w-52 text-clip">{location.text}</p>
             <WhiteButton />
           <BlueButton />

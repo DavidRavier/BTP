@@ -12,11 +12,12 @@ export default function Home() {
   return (
     <main className="grid min-h-screen flex-col items-center justify-between">
     <Header />
+        
         <Advantage  />
         <Location />
         <Advice />
         <Agency />
-        
+        <Contact />
         <Footer />
     </main>
   );

@@ -1,14 +1,16 @@
-import { WestIcon, EastIcon } from "@mui/icons-material";
+import { West, East } from "@mui/icons-material";
 import { Divider, Link } from "@mui/material";
 import Image from "next/image";
 
 export default function Carousel() {
     return (
         <>
-<section className="bg-primary">
+<section className="bg-primary text-light">
+<div className="container mx-auto bg-primary">
+
       <Link href="/truckoverview">
           <Image
-            className=""
+            className="relative -right-80 bottom-0"
             src="/Homepage_main.png"
             alt="Main image"
             width={400}
@@ -16,19 +18,24 @@ export default function Carousel() {
             priority
           />
         </Link>
-        <div className="flex items-baseline">
-        <WestIcon />
-        <h1 className="text-light text-6xl text-center font-restora max-w-2xl" >MP Loc, louer votre matériel de BTP</h1>
-        <EastIcon />
+        <h1 className="absolute right-52 bottom-80 text-6xl text-center font-restora max-w-2xl" >MP Loc, louer votre matériel de BTP</h1>
+        <div className="absolute bottom-80 left-10">
+        <West />
         </div>
-        <div>
-        <p>TRANSPORT ET MANUTENTION — 1</p>
-        <p>TERRASSEMENT & ROUTES — 2</p>
-        <p>ÉLÉVATION & TRAVAIL EN HAUTEUR — 3 </p>
-        <p>DÉMOLITION & GROS ŒUVRE — 4</p>
+        <div className="absolute bottom-80 right-10">
+        <East />
+        </div>
+        <div className=" text-right relative right-3/4 bottom-24">
+        <p>TRANSPORT & MANUTENTION — 1</p>
+        <p>2</p>
+        <p>3 </p>
+        <p>4</p>
+        </div>
         <Divider orientation="vertical" variant="middle" className="bg-light"/>
-        <h4 className="text-light">TITRE DE RÉFÉRENCEMENT</h4>
-        <p className="text-light text-xs">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores tenetur temporibus accusantium obcaecati voluptatem nesciunt minima ad. Sed temporibus at a error sunt dicta ratione.</p>
+        <div>
+        <h4 className="relative bottom-56 left-3/4">TITRE DE RÉFÉRENCEMENT</h4>
+        <p className="text-xs max-w-64 relative bottom-52 left-3/4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores tenetur temporibus accusantium obcaecati voluptatem nesciunt minima ad. Sed temporibus at a error sunt dicta ratione.</p>
+        </div>
         </div>
       </section>
         </>

@@ -25,7 +25,7 @@ export default function Footer() {
             </h2>
   
             <h2 className={`my-8 text-xs py-2`}>
-              Contact{" "}
+              Contact
               <Divider variant="middle" component="p" className="bg-light my-2"/>
                 <p>Agence de Muret:</p>
                 <p>Lorem</p>
@@ -38,7 +38,7 @@ export default function Footer() {
             </h2>
   
             <h2 className={`my-8 text-xs py-2`}>
-              Informations{" "}
+              Agence
               <Divider variant="middle" component="p" className="bg-light mt-2"/>
               <Image
                 src="/Logo_editions_corses.png"

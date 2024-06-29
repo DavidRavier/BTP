@@ -9,7 +9,7 @@ import * as React from 'react';
 import Image from "next/image";
 import { Add, Facebook, Instagram, Phone, Search } from "@mui/icons-material";
 import Link from "next/link";
-import { MenuList, MenuItem, Button, ListItemIcon } from "@mui/material";
+import { Button, ListItemIcon } from "@mui/material";
 
 export default function Header() {
         return (
@@ -50,11 +50,11 @@ export default function Header() {
             </Button>
             </Link>
         </div>
-        <div>
+        <div className='flex'>
             <ListItemIcon>
                 <Phone fontSize="small"  color="light"/>
             </ListItemIcon>
-        <button className="text-primary bg-light mx-2">RÉSERVER</button>
+        <button className="text-primary bg-light mx-4">RÉSERVER</button>
             <ListItemIcon>
                 <Search fontSize="small"  color="light"/>
             </ListItemIcon>

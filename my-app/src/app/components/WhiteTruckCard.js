@@ -15,7 +15,7 @@ export default function WhiteTruckCard() {
       </div>
       <div className="text-dark">
         <div className="px-4">
-        <h3 className="text-xl">Camion benne simle cabine</h3>
+        <h3 className="text-xl">Camion benne simple cabine</h3>
         <h4 className="text-primary mb-4">CHARGE UTILE 1,1 T</h4>
         <p className="">Benne basculante: Oui</p>
         <p>Nombre de places: 3</p>

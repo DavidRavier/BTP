@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import DumptruckCard from "../components/DumptruckCard";
 import { ImageListItem } from "@mui/material";
+import WhiteTruckList from "../components/WhiteTruckList";
 
 export default function Page() {
     return (
@@ -22,7 +23,9 @@ export default function Page() {
             <h4 className="text-center mt-6">TITRE DE RÉFÉRENCEMENT</h4>
                 <p className="text-center text-sm pb-12 max-w-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non metus ut lectus euismod tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc sollicitudin congue ex eget mollis. Donec vitae.</p>
         </div>
-            <DumptruckCard />
+        <div className="grid-raw grid-cols-3">
+            <WhiteTruckList />
+        </div>
             <Footer  />
         </>
     

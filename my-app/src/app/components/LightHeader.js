@@ -1,13 +1,11 @@
 
-
-"use client"
 import * as React from 'react';
 import Image from "next/image";
 import { Add, Facebook, Instagram, Phone, Search } from "@mui/icons-material";
 import Link from "next/link";
 import { Button, ListItemIcon, Divider } from "@mui/material";
 
-export default function Header() {
+export default function LightHeader() {
         return (
             <>
                 <div className=" flex justify-around items-center max-h-screen bg-light">
@@ -50,7 +48,7 @@ export default function Header() {
             <ListItemIcon>
                 <Phone fontSize="small" color="primary"/>
             </ListItemIcon>
-        <button className="text-light bg-primary mx-2">RÉSERVER</button>
+        <button className="text-light bg-primary px-4">RÉSERVER</button>
             <ListItemIcon>
                 <Search fontSize="small" color="primary"/>
             </ListItemIcon>

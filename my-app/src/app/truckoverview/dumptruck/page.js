@@ -8,7 +8,7 @@ import BlueButton from "@/app/components/BlueButton";
 export default function Page() {
     return (
         <>
-        <section className="max-w-screen-lg">
+        <section className="max-w-screen-lg font-restora text-dark">
             <LightHeader />
         <div className="">
             <Image 
@@ -19,10 +19,10 @@ export default function Page() {
                         height={400}
                         priority
                     />
-            <h1 className="text-dark font-restora text-5xl mb-4" >Camion benne simple cabine</h1>
+            <h1 className="text-5xl mb-4" >Camion benne simple cabine</h1>
             <p className="text-primary mb-2">CHARGE UTILE 1,1 T</p>
-            <p className="text-dark text-sm pb-6">Ref. 0000000</p>
-            <p className="text-dark text-sm pb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            <p className="text-sm pb-6">Ref. 0000000</p>
+            <p className="text-sm pb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
             Saepe tempora delectus dolor eius dignissimos consequatur.
             Sapiente sequi vitae perspiciatis obcaecati!
             Id mollitia dolorum itaque impedit? Saepe veritatis id numquam magni obcaecati error
@@ -31,10 +31,10 @@ export default function Page() {
             esse iure? Facere, tempora.</p>
             <GreyButton />
             <BlueButton />
-            <p className="text-dark">A partir de 250€ /jour</p>
+            <p className="">A partir de 250€ /jour</p>
         </div>
 
-    <table className="table-auto bg-primary text-light font-restora text-xs mb-12">
+    <table className="table-auto bg-primary text-light p-12 mb-12">
         <thead>
             <tr>
                 <th>Caractéristiques techniques</th>

@@ -11,8 +11,9 @@
   }
   @font-face {
     font-family: "Restora";
-    font-weight: 700;
-    src: url("/fonts/RestoraExtraLight.otf") format(otf);
+    font-weight: 400;
+    src: local("RestoraExtraLight"),
+    url("/public/fonts/RestoraExtraLight.otf") format("otf");
   }
 }
 

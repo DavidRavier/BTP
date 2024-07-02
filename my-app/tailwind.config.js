@@ -10,11 +10,13 @@ module.exports = {
       primary:"#476683",
       secondary:"#A1A1A1",
       light:"#FFFFFF",
-      dark:"#080808"
+      dark:"#080808",
+      lightGray:"#E5E5E5",
+      darkGray:"#95A5B3",
     },
     extend: {
       fontFamily:{
-        restora: ["Restora", "sans-serif"],
+        restora: ["Restora"],
       }
     },
   },

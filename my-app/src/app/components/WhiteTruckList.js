@@ -7,7 +7,7 @@ const WhiteTruckList = () => {
     }
 
     return (
-        <div className="white-truck-list">
+        <div className="grid grid-cols-3 gap-12 my-12">
             {cards}
         </div>
     );

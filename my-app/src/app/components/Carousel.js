@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Carousel() {
     return (
         <>
-<section className="bg-primary text-light">
+<section className="bg-primary text-light font-restora">
 <div className="container mx-auto bg-primary">
 
       <Link href="/truckoverview">
@@ -18,7 +18,7 @@ export default function Carousel() {
             priority
           />
         </Link>
-        <h1 className="absolute right-52 bottom-80 text-6xl text-center font-restora max-w-2xl" >MP Loc, louer votre matériel de BTP</h1>
+        <h1 className="absolute right-52 bottom-80 text-6xl text-center max-w-2xl" >MP Loc, louer votre matériel de BTP</h1>
         <div className="absolute bottom-80 left-10">
         <West />
         </div>

@@ -22,8 +22,8 @@ export default function Location() {
             <Image src={location.img} alt={location.alt} width={240} height={800}/>
             <p className="text-dark font-restora text-center text-sm max-w-52 text-clip mt-6">{location.text}</p>
             <div className="flex">
-            <button className="text-dark bg-light mx-2 mt-6 text-sm">EN SAVOIR PLUS</button>
-            <button className="text-light bg-primary mx-2 mt-6 px-4 text-sm">RÉSERVER</button>            </div>
+            <button className="text-dark bg-light font-restora mx-2 mt-6 text-sm">EN SAVOIR PLUS</button>
+            <button className="text-light bg-primary font-restora mx-2 mt-6 px-4 text-sm">RÉSERVER</button>            </div>
           </ImageListItem>
         ))}
       </ImageList>
@@ -31,8 +31,6 @@ export default function Location() {
         </>
     )
 }
-
-
 
 
 const locationData = [
@@ -60,82 +58,4 @@ const locationData = [
     title:"DÉMOLITION & GROS ŒUVRE",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias non vero exercitationem, reprehenderit, at nostrum sapiente culpa veniam molestias?"
     }
-];
-        
-        /*
-        <ImageList sx={{ width: 1000, height: 2000}} cols={4}>
-        {locationData.map((location) => (
-          <ImageListItem key={location.img}>
-          <h3>{location.title}</h3>
-            <Image src={location.img} alt={location.alt}/>
-            <p>{location.text}</p>
-            <WhiteButton />
-          <BlueButton />
-          </ImageListItem>
-        ))}
-      </ImageList>
-
------
-
-<Link href="#location">
-        <h2 className="text-dark font-restora text-center mb-12 mt-16 text-4xl ">Nos locations de matériel</h2>
-        </Link>
-        <GreyButton />
-      <section className="flex justify-evenly">
-        <div>
-          <h3 className="text-dark font-restora text-center mb-4 mt-8">TRANSPORT & MANUTENTION</h3>
-          <Image 
-            src="/Homepage_location1.png"
-            alt="icone BTP"
-            width={200}
-            height={50}
-            className="mb-4"
-          />
-          <p className="text-dark fonr font-restora text-sm max-w-52">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores tenetur temporibus accusantium obcaecati voluptatem nesciunt minima ad.</p>
-          <WhiteButton />
-          <BlueButton />
-        </div>
-        <div>
-          <h3 className="text-dark font-restora text-center mb-4 mt-8">TERRASSEMENT & ROUTES</h3>
-          <Image
-          src="/Homepage_location2.png"
-          alt="icone BTP"
-          width={200}
-          height={50}
-          className="mb-4"
-          />
-        </div>
-        <div>
-          <h3 className="text-dark font-restora text-center mb-4 mt-8">ÉLÉVATION & TRAVAIL EN HAUTEUR</h3>
-          <Image
-          src="/Homepage_location3.png"
-          alt="icone BTP"
-          width={200}
-          height={50}
-          className="mb-4"
-          />
-        </div>
-        <div>
-          <h3 className="text-dark font-restora text-center mb-4 mt-8">DÉMOLITION & GROS ŒUVRE</h3>
-          <Image
-          src="/Homepage_location4.png"
-          alt="icone BTP"
-          width={200}
-          height={50}
-          className="mb-4"
-          />
-        </div>
-      </section>
-
-      ------
-
-export default function List() {   
-    const locationItems = location.map(item => <li>{item}</li>);
-return <ul>{locationItems}</ul>;
-}
-
-Peut-être laisser le en savoir plus et le bouton à l'extérieur du .map 
-voire même faire un component pour les deux boutons avec chacun une couleur et les mettre en disabled 
-<p>EN SAVOIR PLUS</p>
-<button>Réserver</button> //a mettre en touppercase
-*/ 
+]; 

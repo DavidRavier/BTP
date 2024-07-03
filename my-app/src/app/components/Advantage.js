@@ -14,8 +14,10 @@ export default function Advantage() {
       <ImageList sx={{width: 1024, height: 150 }} cols={6}>
         {iconData.map((icon) => (
           <ImageListItem key={icon.img}>
+          <div className="items-end">
             <Image src={icon.img} alt={icon.alt} width={60} height={60} className=""/>
-            <p className="text-center text-xs max-w-24 mt-4">{icon.text}</p>
+          </div>
+            <p className="items-end text-center text-xs max-w-24 mt-4">{icon.text}</p>
           </ImageListItem>
          ))}
       </ImageList>

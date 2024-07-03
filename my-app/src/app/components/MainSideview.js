@@ -1,5 +1,6 @@
 import { ImageListItem } from "@mui/material";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function MainSideview() {
     return (
@@ -10,7 +11,9 @@ export default function MainSideview() {
             {sectionData.map((section) => (
                 <ImageListItem key={section.img}>
                 <div className="ml-6">
+                <Link href={section.link}>
                     <Image src={section.img} alt={section.alt} width={150} height={100} />
+                </Link>
                 </div>
                     <h3 className="text-lg mt-4 text-center max-w-sm mb-6">{section.section}</h3>
                 </ImageListItem>
@@ -31,26 +34,31 @@ const sectionData = [
         img:"/Transport1.png",
         alt:"matériel de démémagement",
         section:"MATÉRIEL DE DÉMÉNAGEMENT",
+        link:"/truckoverview",
     },
     {
         img:"/Transport2.png",
         alt:"élévation de charges",
         section:"ÉLÉVATION DE CHARGES",
-    },
-    {
-        img:"/Transport3.png",
-        alt:"camion-benne",
-        section:"CAMION-BENNE",
+        link:"/truckoverview",
     },
     {
         img:"/Homepage_location1.png",
         alt:"véhicule léger",
         section:"VÉHICULE LÉGER",
+        link:"/truckoverview",
+    },
+    {
+        img:"/Transport3.png",
+        alt:"camion-benne",
+        section:"CAMION-BENNE",
+        link:"/truckoverview/dumptruck",
     },
     {
         img:"/Transport5.png",
         alt:"remorque",
         section:"REMORQUE",
+        link:"/truckoverview",
     },
 ]
 

@@ -22,7 +22,9 @@ export default function LightHeader() {
                         </Link>
                     </div>
                     <div>
+                        <Link href="/">
                         <Button className="text-primary" size='small'>Accueil</Button>
+                        </Link>
                         <Link href={"#location"}>
                             
                             <Button className="text-primary" size='small'>Location de matériel</Button>

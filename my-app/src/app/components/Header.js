@@ -28,7 +28,9 @@ export default function Header() {
                         </Link>
                     </div>
                     <div>
+                        <Link href="/">
                         <Button className="text-light" size='small'>Accueil</Button>
+                        </Link>
                         <Link href={"#location"}>
                             
                             <Button className="text-light" size='small'>Location de matériel</Button>

@@ -83,33 +83,17 @@ export default function Page() {
                     </div>
                     </section>
             </div>
-            <div className="flex">
+            <div className="flex mx-6">
             <p className="text-dark text-4xl max-w-60 ml-18">Nos engins de la même gamme</p>
             <ListItemIcon>
                 <West />
                 <East />
             </ListItemIcon>
-            </div>
             <WhiteTruckCard />
+            <WhiteTruckCard />
+            </div>
             <Footer />  
         </div>
     )
     
 }
-
-/*
-
-<form action="#" method="post">
-                    <ul className="bg-primary text-light">
-                        <li>
-                            <label htmlFor="name">Nom</label>
-                            <input type="text" name="name" id="name" />
-                        </li>
-                    </ul>
-                    </form>
-                    <FormControl>
-                        
-                    </FormControl>
-                        <button className="bg-light text-primary text-xs mx-4 px-4 my-2 text-center">DEMANDE DE DEVIS</button>
-
-*/

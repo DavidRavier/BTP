@@ -16,28 +16,3 @@
     url("/public/fonts/RestoraExtraLight.otf") format("otf");
   }
 }
-
-:root {
-  --foreground-rgb: 255, 255, 255;
-  --background-primary-rgb: 71, 102 , 131;
-  --background-secondary-rgb: 161, 161, 161;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}

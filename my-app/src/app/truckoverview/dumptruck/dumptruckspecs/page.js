@@ -1,3 +1,8 @@
+/*
+A faire plus tard: uniformiser le tableau, sûrement avec une propriété comme border-spacing
+ou border-collapse 
+*/
+
 import Image from "next/image";
 import Footer from "@/app/components/Footer";
 import LightHeader from "@/app/components/LightHeader";
@@ -13,11 +18,11 @@ export default function Page() {
                         src="/dumptruck_orange.png"
                         alt="Camion benne orange"
                         className=""
-                        width={500}
+                        width={550}
                         height={100}
                         priority
                     />
-                    <div className="flex flex-col justify-center items-center">
+                    <div className="flex flex-col">
 
             <h1 className="text-4xl mb-4" >Camion benne simple cabine</h1>
             <p className="text-primary mb-2 text-left">CHARGE UTILE 1,1 T</p>

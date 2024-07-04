@@ -1,8 +1,11 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+// import localFont from "next/font/local"
+// const restora = localFont({ src:"public/fonts/RestoraExtraLight.otf"})
 
+
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "MPLoc, location de matériel de BTP",

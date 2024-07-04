@@ -1,6 +1,10 @@
 
 
-// Cette partie du travail a été mappée pour éviter de réécrire du code
+/*
+Cette partie du travail a été mappée pour éviter de réécrire du code. Toutefois, il reste à gérer 
+l'alignement qui, à mon avis, doit se faire par le bas pour éviter l'effet "vague" dû au changement
+de tailles des icones.
+*/
 
 
 import Image from "next/image";

@@ -1,3 +1,12 @@
+
+/*
+A faire plus tard: rendre cette partie dynamique grâce aux state dans React. La solution serait sûrement d'utiliser 
+un hover et un transform pour faire grossir les images lorsque l'utilisateur passe dessus, 
+et de maintenir cette état une fois que l'image est sélectionnée (avec useState?). Dans l'idéal, changer également le menu
+en dessous, afin que celui des lighttruck et des dumptruck soient au même endroit
+
+*/
+
 import { ImageListItem } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";

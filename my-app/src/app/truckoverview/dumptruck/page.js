@@ -1,33 +1,32 @@
 import Image from "next/image";
+import Footer from "@/app/components/Footer";
+import Header from "@/app/components/Header";
+import DumptruckCard from "@/app/components/DumptruckCard";
+import { ImageListItem } from "@mui/material";
+import DumptruckList from "@/app/components/DumptruckList";
+import MainSideview from "@/app/components/MainSideview";
+import DenseMenu from "@/app/components/DenseMenu";
 
 export default function Page() {
     return (
-        <div>
-            <Image 
-                        src="/dumptruck_orange.png"
-                        alt="Camion benne orange"
-                        className=""
-                        width={600}
-                        height={320}
-                        priority
-                    />
-    <h1>Camion benne simple cabine</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-    Saepe tempora delectus dolor eius dignissimos consequatur.
-    Sapiente sequi vitae perspiciatis obcaecati!
-    Id mollitia dolorum itaque impedit? Saepe veritatis id numquam magni obcaecati error
-    dolore placeat esse, nisi ex, a blanditiis adipisci tempore sint, maiores eum est
-    quidem explicabo eos labore nobis laborum architecto laudantium! Ipsam id mollitia
-    esse iure? Facere, tempora.</p>
-
-    <table>
-        <thead>
-            <tr>Caractéristiques techniques</tr>
-            <tr>Documentation</tr>
-            <tr>Engins dans la même gamme</tr>
-        </thead>
-    </table>
+        <>
+        <div className="bg-primary text-light max-w-screen-lg">
+        <Header />
+        <MainSideview />
         </div>
-    )
+        <div className="flex">
+            <DenseMenu />
+            <DumptruckList  />
+        </div>
+            <Footer  />
+        </>
     
+    )
 }
+
+/*
+utiliser un useState pour faire les effets de transition entre les différentes catégories
+TRES IMPORTANT: cette catégorie se divise en deux entre les camions benne (dumptruck)
+et les vehicules légers (lighttruck), le chemin doit changer en fonction de l'icone sur 
+laquelle on appuie
+*/

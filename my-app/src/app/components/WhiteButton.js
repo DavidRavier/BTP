@@ -1,11 +1,6 @@
-const { Button } = require("@mui/material");
-
-function WhiteButton() {
+export default function WhiteButton() {
     return(
-        <Button variant="text" className="bg-light font-restora text-dark p-6">
-            EN SAVOIR PLUS
-        </Button>
+        <button className="bg-light font-restora text-dark px-4 mb-8">EN SAVOIR PLUS</button>
     );
 }
 
-export default WhiteButton();

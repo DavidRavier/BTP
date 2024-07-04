@@ -1,6 +1,10 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 
+// import localFont from "next/font/local"
+// const restora = localFont({ src:"public/fonts/RestoraExtraLight.otf"})
+
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {

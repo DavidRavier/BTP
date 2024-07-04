@@ -11,14 +11,14 @@ import { Add, Facebook, Instagram, Phone, Search } from "@mui/icons-material";
 import Link from "next/link";
 import { ListItemIcon } from "@mui/material";
 
-export default function Header() {
+export default function LightHeader() {
         return (
             <>
-                <div className=" flex justify-between items-center max-w-screen-lg bg-primary text-light font-restora">
+                <div className=" flex justify-between items-center max-w-screen-lg bg-light text-primary font-restora">
                     <div>
                         <Link href="/">
                         <Image
-                        src="/MPLoc_transparent.png"
+                        src="/MPLoc.png"
                         alt="MPLoc Logo"
                         className="m-8"
                         width={140}
@@ -33,28 +33,26 @@ export default function Header() {
                         <Link href="/truckoverview">    
                             <button className="mx-2">Location de matériel</button>
                                 <ListItemIcon>
-                                    <Add fontSize="small" color="light"/>
+                                    <Add fontSize="small" color="primary"/>
                                 </ListItemIcon>
                         </Link>
                             <button className="mx-2">Conseils</button>
                         <button className="mx-2">Galerie photos</button>
-                        <Link href={"#contact"}>
                         <button className="">
                         Contact
                         <ListItemIcon>
-                            <Facebook fontSize="small" color="light"/>
-                            <Instagram fontSize="small" color="light"/>
+                            <Facebook fontSize="small" color="primary"/>
+                            <Instagram fontSize="small" color="primary"/>
                         </ListItemIcon>
                         </button>
-                        </Link>
                     </div>
                     <div className='flex'>
                         <ListItemIcon>
-                            <Phone fontSize="small"  color="light"/>
+                            <Phone fontSize="small"  color="primary"/>
                         </ListItemIcon>
-                    <button className="text-primary bg-light px-4">RÉSERVER</button>
+                    <button className="text-light bg-primary px-4">RÉSERVER</button>
                         <ListItemIcon>
-                            <Search fontSize="small"  color="light"/>
+                            <Search fontSize="small"  color="primary"/>
                         </ListItemIcon>
                     </div>
                 </div>

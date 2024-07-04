@@ -1,11 +1,7 @@
-const { Button } = require("@mui/material");
 
-function BlueButton() {
+export default function BlueButton() {
     return(
-        <Button variant="text" className="bg-primary font-restora text-light p-6">
-            RESERVER
-        </Button>
+        <button className="bg-primary px-4 mb-8 text-light">RÉSERVER</button>
     );
 }
 
-export default BlueButton();

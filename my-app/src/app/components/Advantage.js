@@ -1,54 +1,58 @@
 
 
-// Cette partie du travail a été mappée pour éviter de réécrire du code
+/*
+Cette partie du travail a été mappée pour éviter de réécrire du code. Toutefois, il reste à gérer 
+l'alignement qui, à mon avis, doit se faire par le bas pour éviter l'effet "vague" dû au changement
+de tailles des icones.
+*/
 
 
 import Image from "next/image";
-
-
-
-
-
-const location = [{
-    id: 0,
-    title: "TRANSPORT & MANUTENTION",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias non vero exercitationem, reprehenderit, eligendi temporibus doloribus atque porro, at nostrum sapiente culpa veniam molestias?",
-    width: 400,
-    height: 370,
-    src: "/images/Homepage_location1.jpg"
-}, {
-    id: 1,
-    title:"TERRASSEMENT & ROUTES",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias non vero exercitationem, reprehenderit, eligendi temporibus doloribus atque porro, at nostrum sapiente culpa veniam molestias?"
-}, {
-    id: 2,
-    title:"ELEVATION & TRAVAIL EN HAUTEUR",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias non vero exercitationem, reprehenderit, eligendi temporibus doloribus atque porro, at nostrum sapiente culpa veniam molestias?"
-}, {
-    id: 3,
-    title:"DEMOLITION & GROS OEUVRE",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias non vero exercitationem, reprehenderit, eligendi temporibus doloribus atque porro, at nostrum sapiente culpa veniam molestias?"
-}];
+import { ImageList, ImageListItem } from "@mui/material";
 
 export default function Advantage() {
-    return (
+    return(
         <>
-            <Image  
-            src={location.src}
-            alt="Différents travaux proposés"
-            width={location.width}
-            height={location.height}
-            className=""
-            />
-            <p>{location.title}</p>
-            <p>{location.text}</p>
+        <h2 className="text-dark font-restora mb-12 mt-16 mx-auto">Vos avantages chez MP Loc</h2>
+        <div className="flex text-primary max-h-screen ml-12 md:flex-nowrap md:overflow-x-auto">
+      <ImageList sx={{width: 1024, height: 150 }} cols={6}>
+        {iconData.map((icon) => (
+          <ImageListItem key={icon.img}>
+          <div className="items-end">
+            <Image src={icon.img} alt={icon.alt} width={60} height={60} className=""/>
+          </div>
+            <p className="items-end text-center text-xs max-w-24 mt-4">{icon.text}</p>
+          </ImageListItem>
+         ))}
+      </ImageList>
+        </div>
         </>
     )
 }
 
-/*
-Peut-être laisser le en savoir plus et le bouton à l'extérieur du .map 
-voire même faire un component pour les deux boutons avec chacun une couleur et les mettre en disabled 
-<p>EN SAVOIR PLUS</p>
-<button>Réserver</button> //a mettre en touppercase
-*/ 
+const iconData = [
+  {
+    img:"/HomepageIcon1.png",
+    text:"LARGE CHOIX D`ENGINS",
+  },
+  {
+    img:"/HomepageIcon2.png",
+    text:"ASSISTANCE 7 JOURS/7",
+  },
+  {
+    img:"/HomepageIcon3.png",
+    text:"LIVRAISON A DOMICILE",
+  },
+  {
+    img:"/HomepageIcon4.png",
+    text:"PRIX ATTRACTIFS",
+  },
+  {
+    img:"/HomepageIcon5.png",
+    text:"EQUIPE REACTIVE",
+  },
+  {
+    img:"/HomepageIcon6.png",
+    text:"CONSEILS POUR VOS TRAVAUX",
+  },
+]
